@@ -1,0 +1,124 @@
+{
+  "dataset": "speechocean762",
+  "source_repository": "https://github.com/jimbozhang/speechocean762",
+  "revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+  "created_utc": "2026-10-27T14:55:32.812300+00:00",
+  "python_version": "3.11.4",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_source": "https://www.openslr.org/101/",
+  "citation": "Zhang et al. (2021), speechocean762: An Open-Source Non-native English Speech Corpus For Pronunciation Assessment, Interspeech.",
+  "changes": "Seeded speaker/utterance subset; local acoustic feature extraction; aggregate fluency scores scaled from 0-10 to 0-100.",
+  "selection_options": {
+    "seed": 20261027,
+    "train_speakers": 40,
+    "validation_speakers": 10,
+    "test_speakers": 10,
+    "utterances_per_speaker": 5
+  },
+  "selection_algorithm": "sha256_rank_v1",
+  "selection_sha256": "baa78151c7efc86c307e4ed2cf3006091e9468e495f689fafd8ae83d62c19129",
+  "manifest_sha256": "a72410540028e8073734986856f8f23e9e5dacd17b07905f8015238a27b31bc6",
+  "feature_code_sha256": {
+    "speakingt/audio.py": "3d52f3156edd696a5f48f77100cc435d82b6500ee259cfad24fe68475423730a",
+    "speakingt/report.py": "8617d32ea2371f38f9e3df439d33d8f8ce34b9fde257ab2cbe72ca5b3edd3084",
+    "scripts/prepare_speechocean.py": "91156ef1127d3338661a36282e7e6c494b7fea9adac4c74ee247f396d66b61eb"
+  },
+  "selected": {
+    "train": {
+      "utterances": 200,
+      "speakers": 40
+    },
+    "validation": {
+      "utterances": 50,
+      "speakers": 10
+    },
+    "test": {
+      "utterances": 50,
+      "speakers": 10
+    }
+  },
+  "retained": {
+    "train": {
+      "utterances": 190,
+      "speakers": 40
+    },
+    "validation": {
+      "utterances": 47,
+      "speakers": 10
+    },
+    "test": {
+      "utterances": 46,
+      "speakers": 10
+    }
+  },
+  "excluded": {
+    "train": {
+      "utterances": 10,
+      "speakers": 7
+    },
+    "validation": {
+      "utterances": 3,
+      "speakers": 3
+    },
+    "test": {
+      "utterances": 4,
+      "speakers": 4
+    }
+  },
+  "exclusion_reasons": {
+    "train": {
+      "unreliable_pitch": 10
+    },
+    "validation": {
+      "unreliable_pitch": 3
+    },
+    "test": {
+      "unreliable_pitch": 4
+    }
+  },
+  "limitations": [
+    "Small Mandarin-L1 read-speech pilot subset, not the full official benchmark or a Korean-user validation.",
+    "Train and validation speakers come only from official train; test speakers come only from official test.",
+    "Speaker-disjoint splits do not guarantee sentence-disjoint prompts.",
+    "Selection was fixed before labels/features; exclusions were not replaced and may introduce attrition bias.",
+    "Reliable-pitch filtering can exclude difficult voices or recording conditions; report all exclusions.",
+    "Human fluency target is the published aggregate of expert ratings, not a pronunciation or native-accent label."
+  ],
+  "metrics": {
+    "train": {
+      "mae": 8.404529401694395,
+      "rmse": 10.801383673374042,
+      "baseline_mae": 11.042105263157895,
+      "median_baseline_mae": 10.157894736842104,
+      "count": 190
+    },
+    "validation": {
+      "mae": 8.504773994598734,
+      "rmse": 11.870664477408118,
+      "baseline_mae": 11.893617021276595,
+      "median_baseline_mae": 9.787234042553191,
+      "count": 47
+    },
+    "test": {
+      "mae": 10.097262000623516,
+      "rmse": 13.330320087624273,
+      "baseline_mae": 11.91304347826087,
+      "median_baseline_mae": 10.217391304347826,
+      "count": 46
+    }
+  },
+  "training": {
+    "seed": 20261027,
+    "max_epochs": 2000,
+    "patience": 100,
+    "epochs_run": 507,
+    "best_epoch": 407,
+    "selection_metric": "validation_mae",
+    "learning_rate": 0.4266405612407202,
+    "constant_training_target": false,
+    "numpy_version": "2.4.6"
+  },
+  "downloaded_bytes": 47470142,
+  "external_service_cost_usd": 0
+}

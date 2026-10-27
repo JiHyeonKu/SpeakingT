@@ -1,0 +1,105 @@
+{
+  "format": "speakingt.fluency_calibration",
+  "version": 1,
+  "model_type": "linear_fluency_calibration",
+  "target": {
+    "name": "human_rated_fluency",
+    "minimum": 0,
+    "maximum": 100
+  },
+  "feature_names": [
+    "active_fraction",
+    "internal_pause_count_per_min",
+    "internal_pause_ratio",
+    "pitch_span_semitones"
+  ],
+  "normalization": {
+    "mean": [
+      0.6538550601926445,
+      9.412662050701748,
+      0.06962650751599234,
+      5.371010938872083
+    ],
+    "scale": [
+      0.08744368371154287,
+      13.325353345506391,
+      0.10722119905806923,
+      3.1049819473611477
+    ]
+  },
+  "parameters": {
+    "weights": [
+      -0.1591989238341191,
+      0.09900881738858776,
+      -0.7498885514799459,
+      0.13243760263015228
+    ],
+    "bias": -1.248982912308166e-16,
+    "target_mean": 77.0,
+    "target_scale": 13.915156447103582
+  },
+  "metrics": {
+    "train": {
+      "mae": 8.404529401694395,
+      "rmse": 10.801383673374042,
+      "baseline_mae": 11.042105263157895,
+      "median_baseline_mae": 10.157894736842104,
+      "count": 190
+    },
+    "validation": {
+      "mae": 8.504773994598734,
+      "rmse": 11.870664477408118,
+      "baseline_mae": 11.893617021276595,
+      "median_baseline_mae": 9.787234042553191,
+      "count": 47
+    },
+    "test": {
+      "mae": 10.097262000623516,
+      "rmse": 13.330320087624273,
+      "baseline_mae": 11.91304347826087,
+      "median_baseline_mae": 10.217391304347826,
+      "count": 46
+    }
+  },
+  "training": {
+    "seed": 20261027,
+    "max_epochs": 2000,
+    "patience": 100,
+    "epochs_run": 507,
+    "best_epoch": 407,
+    "selection_metric": "validation_mae",
+    "learning_rate": 0.4266405612407202,
+    "constant_training_target": false,
+    "numpy_version": "2.4.6"
+  },
+  "data": {
+    "source_sha256": "a72410540028e8073734986856f8f23e9e5dacd17b07905f8015238a27b31bc6",
+    "label_source": "human",
+    "splits": {
+      "train": {
+        "recordings": 190,
+        "speakers": 40,
+        "audio_hashes_checked": 190
+      },
+      "validation": {
+        "recordings": 47,
+        "speakers": 10,
+        "audio_hashes_checked": 47
+      },
+      "test": {
+        "recordings": 46,
+        "speakers": 10,
+        "audio_hashes_checked": 46
+      }
+    }
+  },
+  "limitations": [
+    "This model estimates human-rated fluency from the supplied acoustic features; it does not assess phoneme accuracy, native accent, grammar, or meaning.",
+    "Human ratings and representative speaker-disjoint evaluation data are required. Native speech recordings alone are not supervised labels.",
+    "Synthetic-data tests verify software behavior only, not speech-assessment validity.",
+    "The held-out test set must not be reused to choose features or training settings."
+  ],
+  "warnings": [
+    "Experimental fluency estimate: reliability requires representative human ratings and separate real-speech evaluation. A score is not pronunciation accuracy."
+  ]
+}
