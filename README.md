@@ -34,7 +34,17 @@ python -m speakingt analyze recordings/day01.wav --transcript-file data/day01-ve
 python -m speakingt clip recordings/day01.wav --start 2 --end 12 --output recordings/day01-sentence.wav
 ```
 
-가상환경을 활성화하지 않았다면 위 `python` 대신 `.\.venv\Scripts\python.exe`를 사용합니다. 입력은 8–48kHz, 1–8채널, 8/16/24/32bit 정수 PCM WAV, 0.1–300초입니다. MP3/M4A/WebM/float WAV는 먼저 PCM WAV로 내보내야 합니다. 내부 휴지는 0.25초 이상, 짧은 에너지 공백은 0.12초까지 연결합니다. 잡음도 활동 구간에 포함될 수 있습니다.
+가상환경을 활성화하지 않았다면 위 `python` 대신 `.\.venv\Scripts\python.exe`를 사용합니다. 분석 입력은 8–48kHz, 1–8채널, 8/16/24/32bit 정수 PCM WAV, 0.1–300초입니다. 내부 휴지는 0.25초 이상, 짧은 에너지 공백은 0.12초까지 연결합니다. 잡음도 활동 구간에 포함될 수 있습니다.
+
+M4A 등 다른 형식은 선택 기능으로 로컬 변환할 수 있습니다. ASR 선택 기능을 설치했다면 변환 라이브러리도 함께 설치됩니다.
+
+```powershell
+python -m pip install -e ".[audio]"
+python -m speakingt import-audio "recording.m4a" --output recordings/imported.wav
+python -m speakingt analyze recordings/imported.wav --output reports/imported.json
+```
+
+원본을 보존하고 mono/16kHz/PCM16 WAV와 `.wav.import.json` 변환 기록을 만듭니다. 원본과 출력의 SHA256, 입력 코덱, 변환 조건을 기록하며, 기존 출력 파일을 덮어쓰지 않습니다. 음량 정규화·무음 삭제·잡음 제거는 하지 않습니다. 시간 좌표는 변환 WAV의 첫 샘플을 기준으로 하며, 컨테이너의 시작 오프셋은 변환 기록에 남깁니다. 손실 압축에서 이미 사라진 음향 정보를 복원하는 기능은 아닙니다.
 
 같은 문장의 참고 녹음이 있을 때:
 

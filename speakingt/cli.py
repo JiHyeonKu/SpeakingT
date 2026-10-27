@@ -67,6 +67,9 @@ def clip_wav(source: str, output: str, start: float, end: float) -> None:
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="SpeakingT: 원본 음성 관찰 및 발음 평가 연구 도구")
     commands = parser.add_subparsers(dest="command", required=True)
+    importer = commands.add_parser("import-audio", help="M4A 등 음성을 분석용 PCM WAV로 변환; 원본 보존")
+    importer.add_argument("audio")
+    importer.add_argument("--output", required=True)
     analyze = commands.add_parser("analyze", help="PCM WAV 분석과 HTML/JSON 보고서")
     analyze.add_argument("audio")
     analyze.add_argument("--output", default="reports/analysis.json")
@@ -108,7 +111,12 @@ def main(argv: list[str] | None = None) -> int:
             stream.reconfigure(encoding="utf-8", errors="replace")
     args = make_parser().parse_args(argv)
     try:
-        if args.command == "demo":
+        if args.command == "import-audio":
+            from .import_audio import import_audio
+            metadata = import_audio(args.audio, args.output)
+            write_json(str(Path(args.output)) + ".import.json", metadata)
+            print(Path(args.output).resolve())
+        elif args.command == "demo":
             paths = demo(args.output_dir)
             print("합성 신호 테스트입니다. 실제 발음 평가가 아닙니다.")
             for path in paths:
