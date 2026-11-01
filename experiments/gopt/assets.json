@@ -1,0 +1,150 @@
+{
+  "upstream_model_revision": "bed909daf8eca035095871e51642525acc5b9b55",
+  "upstream_model_sha256": "e63a178f5d32221ebc1233a4fe32dc12a092f804360b1782a6159d3185b3be34",
+  "feature_source": {
+    "repository": "JazminVidal/gopt-w",
+    "revision": "908bc7b8258c58aa1c8193689243e6b876ff4a71",
+    "role": "third-party public preservation of GOPT-format SpeechOcean762 features; labels independently verified",
+    "license": "SpeechOcean762 CC BY 4.0; retain original corpus attribution"
+  },
+  "files": [
+    {
+      "file": "phn_dict.json",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/phn_dict.json",
+      "sha256": "f0b53bbdc683fc9cd0901b09d423299d48f2fffd9da83605c013833040bd7171",
+      "bytes": 444
+    },
+    {
+      "file": "SPLIT.md",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/SPLIT.md",
+      "sha256": "f077e7a837db2180de148841ef2d88ce3df637ebdc1d685e01638bc551204067",
+      "bytes": 3462
+    },
+    {
+      "file": "tr_feat.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/tr_feat.npy",
+      "sha256": "7c519d03499d41748cc541270d9ce2ed3ce3db45f7b9b2aac9b2b000c1bfd033",
+      "bytes": 84000128
+    },
+    {
+      "file": "tr_label_phn.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/tr_label_phn.npy",
+      "sha256": "b82593c5b3880e9e070ef088e2e6b765e6b784be3fa2fda8a4a122e4bb78f503",
+      "bytes": 2000128
+    },
+    {
+      "file": "tr_label_word.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/tr_label_word.npy",
+      "sha256": "1d034bf371e6818f28b5109206064df2f8a45bcf836848a04563e494a4e0ddc7",
+      "bytes": 4000128
+    },
+    {
+      "file": "tr_label_utt.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/tr_label_utt.npy",
+      "sha256": "6438c17512ba5a40ced8c6731a656a0eecf968090ed645fca1ed2c085977a592",
+      "bytes": 100128
+    },
+    {
+      "file": "tr_keys_utt.csv",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/tr_keys_utt.csv",
+      "sha256": "8b04ed7a35559748b1fce06048baa074a0069300027224e02a028d9b42adc990",
+      "bytes": 25000
+    },
+    {
+      "file": "dev_feat.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/dev_feat.npy",
+      "sha256": "f3b61640aa5f9f90c7a35c61a4f44e14279e409238903ac493b714ea556b80e4",
+      "bytes": 42336128
+    },
+    {
+      "file": "dev_label_phn.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/dev_label_phn.npy",
+      "sha256": "15daa708f34d6ee7d36561fb724cfb5f987c382576e15f88097737a53842d502",
+      "bytes": 1008128
+    },
+    {
+      "file": "dev_label_word.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/dev_label_word.npy",
+      "sha256": "82141ccf128830068e92f0323575b9bebe3792fbbcfa4b4de14230bba1ca26af",
+      "bytes": 2016128
+    },
+    {
+      "file": "dev_label_utt.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/dev_label_utt.npy",
+      "sha256": "0d73b9ceec27cc115f2233faa19e1944860d2edf09cf3313cdb2272702ecba35",
+      "bytes": 50528
+    },
+    {
+      "file": "dev_keys_utt.csv",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/dev_keys_utt.csv",
+      "sha256": "df6b38ee164323aac45c870d5779fa70a131f947de5eab6260dc77f5fca17221",
+      "bytes": 12600
+    },
+    {
+      "file": "new_te_feat.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/new_te_feat.npy",
+      "sha256": "d92c1db87648088a55391a635a212b93ee3af3033822686f4422bc1eef8c7b0a",
+      "bytes": 41664128
+    },
+    {
+      "file": "new_te_label_phn.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/new_te_label_phn.npy",
+      "sha256": "1ee09ae3328ff1ad5031cb132de98ff475fdb58a45bcd5f4f94c4e2ac4c01094",
+      "bytes": 992128
+    },
+    {
+      "file": "new_te_label_word.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/new_te_label_word.npy",
+      "sha256": "db46f495bebaeb386063c6c998e6c7161c97903a8e36b9cb417936a6cf5f7979",
+      "bytes": 1984128
+    },
+    {
+      "file": "new_te_label_utt.npy",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/new_te_label_utt.npy",
+      "sha256": "05b6d6c4194a695e235219dc27fa1d58280ba7f2f66315368c0d58df7e5e765f",
+      "bytes": 49728
+    },
+    {
+      "file": "new_te_keys_utt.csv",
+      "url": "https://raw.githubusercontent.com/JazminVidal/gopt-w/908bc7b8258c58aa1c8193689243e6b876ff4a71/data/librispeech/seq/new_te_keys_utt.csv",
+      "sha256": "93ce9e85dcb86c43b8e1cff5c5ccd3435e3cc7a6a31f18d8e25c057e52f5b866",
+      "bytes": 12400
+    },
+    {
+      "file": "scores.json",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/resource/scores.json",
+      "sha256": "31c847b8ee29d61d8fe338bcbb1d4c4721425f05481d2144ad57cd19ea1159f8",
+      "bytes": 9755534
+    },
+    {
+      "file": "train_utt2spk",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/train/utt2spk",
+      "sha256": "e83546f91fa7444547b8c690ef004ad514eee1f7066d38ec87f7a6c847c84737",
+      "bytes": 37500
+    },
+    {
+      "file": "test_utt2spk",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/utt2spk",
+      "sha256": "061291f397f8c281ff1bf6bf388e875ab9c4cc0de66f37d8559e690af08964be",
+      "bytes": 37500
+    },
+    {
+      "file": "train_wav.scp",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/train/wav.scp",
+      "sha256": "44b89d090fcb0be781c1bb275f4cf48aeb3694cdf9f02be52dd06b417ea67b8c",
+      "bytes": 102500
+    },
+    {
+      "file": "test_wav.scp",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/wav.scp",
+      "sha256": "ec911e9319759c73e71ab62dc9cf6a2a00a1d02b7b91a288b39e6d56451e66f3",
+      "bytes": 102500
+    },
+    {
+      "file": "pretrained.pth",
+      "url": "https://raw.githubusercontent.com/YuanGongND/gopt/bed909daf8eca035095871e51642525acc5b9b55/pretrained_models/gopt_librispeech/best_audio_model.pth",
+      "sha256": "ab07451e51648f9d2455505a51055b20ac4ad7921d771ccc5170ff486a826259",
+      "bytes": 121411
+    }
+  ]
+}

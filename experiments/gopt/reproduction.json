@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-02",
+  "kind": "fixed upstream checkpoint evaluation; not a newly trained model",
+  "model": "GOPT LibriSpeech",
+  "model_revision": "bed909daf8eca035095871e51642525acc5b9b55",
+  "parameter_count": 26577,
+  "utterances": 2500,
+  "speakers": 125,
+  "normalization": {
+    "mean": 3.203,
+    "std": 4.045,
+    "source": "upstream published normalization"
+  },
+  "metrics": {
+    "phone": {
+      "mse": 0.08347444121693452,
+      "mae": 0.14149644197413838,
+      "pcc": 0.618323325890664,
+      "n": 47369
+    },
+    "utterance": {
+      "accuracy": {
+        "mse": 1.168911786085157,
+        "mae": 0.8023885997772217,
+        "pcc": 0.7178680101260281,
+        "n": 2500
+      },
+      "completeness": {
+        "mse": 0.26254697899956475,
+        "mae": 0.09484554834365845,
+        "pcc": 0.08690805059684842,
+        "n": 2500
+      },
+      "fluency": {
+        "mse": 0.8766568684766469,
+        "mae": 0.7236882486343383,
+        "pcc": 0.7561485189031256,
+        "n": 2500
+      },
+      "prosody": {
+        "mse": 0.8540931210901701,
+        "mae": 0.7262174246788025,
+        "pcc": 0.7647671852749859,
+        "n": 2500
+      },
+      "total": {
+        "mse": 1.0851546564630574,
+        "mae": 0.775242652797699,
+        "pcc": 0.7437699182510104,
+        "n": 2500
+      }
+    },
+    "word": {
+      "accuracy": {
+        "mse": 2.284860062616616,
+        "mae": 0.8021219897644994,
+        "pcc": 0.5376983352621829,
+        "n": 15967
+      },
+      "stress": {
+        "mse": 0.17661913373116878,
+        "mae": 0.11929340718526715,
+        "pcc": 0.3245377415489036,
+        "n": 15967
+      },
+      "total": {
+        "mse": 1.7312156904563463,
+        "mae": 0.7088178747200656,
+        "pcc": 0.5545173521713634,
+        "n": 15967
+      }
+    },
+    "units": {
+      "phone": "0\u20132 target scale",
+      "utterance_and_word": "0\u201310 target scale"
+    }
+  },
+  "versions": {
+    "python": "3.11.4",
+    "torch": "2.15.0+cpu"
+  },
+  "external_spend_usd": 0,
+  "limitations": [
+    "Third-party preservation of GOPT-format features; all 5000 labels and phone identities audited against pinned official SpeechOcean762.",
+    "Original human score 0 is retained, unlike the 0.1 floor in the original GOP recipe.",
+    "Close checkpoint reproduction, not bitwise equality or a newly established benchmark result.",
+    "Published best checkpoint was selected under upstream protocol; not independent model selection here.",
+    "Mandarin-L1 read speech; personal Korean-L1 WAV inference and diagnostic validity remain unverified."
+  ]
+}

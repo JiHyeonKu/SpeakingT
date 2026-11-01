@@ -4,6 +4,18 @@
 
 **현재는 측정 프로토타입입니다. 검증된 개인 발음 교정 모델은 아직 아닙니다.** 목표는 선택한 미국 영어 발음에 가까워지면서 이해하기 쉬운 말하기를 연습하는 것입니다. 하나의 원어민 억양을 유일한 정답으로 간주하지 않습니다.
 
+## 공개 발음 모델 직접 실행하기
+
+[GOPT 학습 노트북](notebooks/SpeakingT_GOPT.ipynb)에서 실제 공개 음성·사람 점수를 확인하고,
+공식 가중치로 예측한 뒤 epoch, learning rate 등을 바꿔 직접 학습할 수 있습니다.
+Windows 프로젝트 폴더의 `start-gopt.cmd`를 실행하고 셀마다 Shift+Enter를 누릅니다.
+설치·데이터 출처·재현 범위는 [실행 안내](docs/GOPT_WORKBENCH.md)에 있습니다.
+
+[Colab에서 열기](https://colab.research.google.com/github/JiHyeonKu/SpeakingT/blob/main/notebooks/SpeakingT_GOPT.ipynb)
+
+학습 그래프, CSV, 가중치 변화량과 epoch별 체크포인트를 로컬에 보존합니다.
+이 단계는 공개 GOP 특징을 사용하는 평가 모델 실행입니다. 개인 WAV/M4A의 GOP 추출 연결은 아직 구현하지 않았습니다.
+
 ## 구현한 것
 
 - 정수 PCM WAV 입력, 녹음 품질 점검, 내부 휴지의 시간 위치.

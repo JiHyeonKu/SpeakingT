@@ -13,9 +13,13 @@ dependencies = ["numpy>=1.24,<3"]
 audio = ["av>=11,<19"]
 asr = ["faster-whisper>=1.1,<2"]
 record = ["sounddevice>=0.4,<1"]
+research = ["torch>=2.6,<3", "matplotlib>=3.8,<4", "jupyterlab>=4,<5", "tensorboard>=2.17,<3", "nbclient>=0.10,<1"]
 
 [project.scripts]
 speakingt = "speakingt.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["speakingt*"]
+
+[tool.setuptools.package-data]
+"speakingt.vendor" = ["GOPT-LICENSE"]

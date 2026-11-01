@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-02",
+  "purpose": "2-epoch notebook integration check, not an optimized training run",
+  "config": {
+    "epochs": 2,
+    "learning_rate": 0.001,
+    "batch_size": 25,
+    "seed": 7,
+    "validation_speakers": 25,
+    "patience": 5,
+    "embed_dim": 24,
+    "heads": 1,
+    "depth": 3,
+    "device": "cpu",
+    "threads": 4,
+    "initialization": "random evaluation model; acoustic features fixed",
+    "dataset_manifest_sha256": "4950e49fd6334274300e06ea65a3542b314b13b5a2c162f8d6646d55f46f9ab2",
+    "model_source_sha256": "e63a178f5d32221ebc1233a4fe32dc12a092f804360b1782a6159d3185b3be34",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "numpy": "2.4.6"
+    }
+  },
+  "summary": {
+    "status": "completed",
+    "epochs_completed": 2,
+    "best_epoch": 2,
+    "best_validation_phone_mse": 0.2537331919774834,
+    "selection_metric": "validation phone MSE",
+    "test_evaluated": false,
+    "elapsed_seconds": 4.880720300000121
+  },
+  "history": [
+    {
+      "epoch": "0",
+      "batch_loss": "",
+      "train_phone_mse": "5.366896960195127",
+      "val_phone_mse": "5.0720758102518415",
+      "val_phone_pcc": "-0.021254225795086745",
+      "val_utterance_total_pcc": "-0.2104313931421808",
+      "val_prosody_pcc": "-0.11646020523685376",
+      "weight_change_l2": "0.0",
+      "elapsed_seconds": "0.5367865999996866"
+    },
+    {
+      "epoch": "1",
+      "batch_loss": "0.8728733465075493",
+      "train_phone_mse": "0.14918247840506962",
+      "val_phone_mse": "0.26854491801916136",
+      "val_phone_pcc": "0.1142561229244787",
+      "val_utterance_total_pcc": "0.24617475741105604",
+      "val_prosody_pcc": "0.2532312990276638",
+      "weight_change_l2": "2.574696310292937",
+      "elapsed_seconds": "2.8299753999999666"
+    },
+    {
+      "epoch": "2",
+      "batch_loss": "0.30889259995892643",
+      "train_phone_mse": "0.14166366308170822",
+      "val_phone_mse": "0.2537331919774834",
+      "val_phone_pcc": "0.36189281724177425",
+      "val_utterance_total_pcc": "0.3896369727525039",
+      "val_prosody_pcc": "0.3318925294386077",
+      "weight_change_l2": "2.707956095572912",
+      "elapsed_seconds": "4.692616899999848"
+    }
+  ],
+  "tests_passed": 84,
+  "notebook_execution": "All code cells completed in Python 3.11 Windows CPU; final test cell left disabled",
+  "cloud_or_api_spend_usd": 0
+}

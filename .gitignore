@@ -21,3 +21,6 @@ models/
 *.pt
 *.pth
 *.safetensors
+runs/
+.ipynb_checkpoints/
+.jupyter/
