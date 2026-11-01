@@ -4,6 +4,8 @@
 
 사용자가 직접 설정을 바꾸고 실행하는 [GOPT 노트북](../notebooks/SpeakingT_GOPT.ipynb)을 추가했다.
 Windows에서는 `start-gopt.cmd`로 연다. [실행 안내](GOPT_WORKBENCH.md).
+기능 전체, 재시작·복원 절차, 오류 해결 및 사용자 계획표는 [통합 사용 설명서](../START_HERE.md)에 있다.
+2026-11-02 설치 재점검에서 research/audio/asr 패키지와 의존성 정상 상태를 확인했다. sounddevice는 미설치다.
 
 ## 완료
 
