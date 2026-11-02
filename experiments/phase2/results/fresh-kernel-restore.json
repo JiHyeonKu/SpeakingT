@@ -1,0 +1,12 @@
+{
+  "fresh_jupyter_kernel": true,
+  "guide_cells": [
+    2,
+    13
+  ],
+  "run": "runs/ssl/notebook-full-seed7-20261102-095132-822399",
+  "predictions_bitwise_identical": true,
+  "validation_utterances": 500,
+  "validation_macro_mse": 1.4940850736000506,
+  "new_training": false
+}

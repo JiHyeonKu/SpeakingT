@@ -1,0 +1,12 @@
+{
+  "reason": "Incorrect explanatory comment said waveform standardization; actual official processor do_normalize=false from the start.",
+  "executable_ast_identical": true,
+  "acoustic_feature_values_bitwise_unchanged": true,
+  "utterances_verified": 2500,
+  "old_source_sha256": "ffadeeb45badfa927142eeb96f111ccdce86a54a9f3e9042cad14c78afc3f9ef",
+  "extract_ast_sha256": "32173b475afee24036b6e6dbd500acafc09300773c36614d74db6442f036d23d",
+  "old_feature_manifest_sha256": "cc4dd9bf3105f89c5d0f0f2edc18b78e9c296a13eac16cb0ead7992f73de6d36",
+  "new_feature_manifest_sha256": "0d7d8a01a0012d2d34af4acbd9004f5162ea986536b58294b3db7a19e4b57def",
+  "when": "Before first full train/validation model run; original metadata and extraction timings preserved locally",
+  "backup": "reports/phase2/pre-ast-provenance"
+}

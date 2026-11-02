@@ -1,0 +1,184 @@
+{
+  "name": "Baseline 01",
+  "run": "runs/gopt/run-20261102-014018-444335",
+  "files": {
+    "best.pt": "a6ab5fbcac9bae8b9a66d3f651b3adf5491857fbc8e1b7e1e77868a4b1677c04",
+    "config.json": "26cf8327141af79da113a3f5d367fbc79232e7fdbaa01e1a88bcd10701121ad7",
+    "epoch-000.pt": "5ff3b50be3287b80fba6c60b0b6d291f1ca8515c24b5bb622e4a2a0ebdcb0b56",
+    "epoch-001.pt": "eba7a6cf9f0b2f6e6ba9c441f588010bd6b578733c865945872601f43e30c89f",
+    "epoch-002.pt": "4502f7a027820afc6bffcb3bc19f449d89cb3d97693fa020bcbb2ed5d69666a4",
+    "epoch-003.pt": "bf36774962cfef5d8578b78fa9d37f2badb7f369704d5f02749c21a33b5ce462",
+    "epoch-004.pt": "b1a388c0f763728e91055281a8bdf9ebe32f6b93a2db8545271c2054b85807cf",
+    "epoch-005.pt": "31f3e5cf238b84cd1db73a4fb9e2ba6e3227e1bfb49ecf542e3b35072c06717b",
+    "epoch-006.pt": "0e25e8ed50aac9c01ff98a057fdd1be176a32778dac7756751b3f150bd3fd26a",
+    "epoch-007.pt": "8dd14f86e2603cee29bc695e25249e51a4265ba81a86706f1f95bf2419bf75f4",
+    "epoch-008.pt": "feeb54d8eb2f9d12b73ecfebdb8b5c0505edfdbcb8483e0b6743a81594d3e209",
+    "epoch-009.pt": "613b420c8f7dfb0d7b6a1d13d24b1d1688a91afeaa88ccb9f5dfa613503e11bc",
+    "epoch-010.pt": "900746a234a253bf0e36bc0e9304f76828bf09d7174cedb45c1b12b8ce0c9455",
+    "epoch-011.pt": "998a6c74ca990cdc065323a290cc7bbe313b66ab4a35578e182617de58e33736",
+    "epoch-012.pt": "17489c43b6329a888cc40e9f3a3d7c65a654a0cd50124ea4a4142cedd46fa331",
+    "epoch-013.pt": "c629cb80cc3b1a7e000f64c72f59ea5d34acfaceeecc868f7a5db729ef8e4730",
+    "epoch-014.pt": "c59a8be25c925c3b87a78f90025ba1033c81191857bff862aa6e2325eb0f482d",
+    "epoch-015.pt": "20a2260e4666044ab63b7ae7dcd30ef3e0af65e8e8738e1533a91b65258c8015",
+    "epoch-016.pt": "159dd9f23fbcecf3833f6c25c9cdfd29b25831b547fcdbeccbe03d35ce11998e",
+    "epoch-017.pt": "6871d42b9eeddc7d988fdd179de295b4ee20e8e4df9733d63ae6ba96576c2c8e",
+    "epoch-018.pt": "affc59e4dc32d7501b8fa532b76377b224432ebcfd2981305667931ef2faed81",
+    "epoch-019.pt": "e5031376a36536beefcde01ca6ea6bf9493cc081dfee4158617283ae545d11f2",
+    "epoch-020.pt": "d9af002790cdcd6be6576df619e45d4c571ec58e663237de07c7fe71b4edd0c5",
+    "epoch-021.pt": "c446dc2b391d6b25496f9e42f343b8a58edddbc8f2c66e5ebe248d14c04c8bd7",
+    "epoch-022.pt": "1a7870bb28dd5cd11460767c6cb326a00dd12b53079ef98f5ea917ebd669ca3e",
+    "epoch-023.pt": "7b06774f86349778f880dc5c8ed58acb12efb6f7dd9eb190fd669cf161b4c0e7",
+    "epoch-024.pt": "ae8b7aa92bfdee6791a06dae311f6fd37d10c880c68a5b6ccc4e8c15982c0164",
+    "epoch-025.pt": "15dfb8683e799c621f85dec5a0e6ab3fe479da2d382705681977f09b0e912cb0",
+    "epoch-026.pt": "a35354d37112b01c5bcbb6b689fd05a44528ef8e3d93c1fc90de3d68f88ae9c5",
+    "epoch-027.pt": "9fd5f50bfd0b807d9cd83db900e5bb2d0f979593d05c511f5cc3bb94b020de9d",
+    "epoch-028.pt": "469d9ec9e73d9d35b7382761f9f77edd79042df2e2f6442051d2e159c887dcef",
+    "epoch-029.pt": "0860f73091d0980fd5cc8c27381d273f8dcac25a81713557084e664a9b34f6ed",
+    "epoch-030.pt": "c29d0a16a4eb5e52121d539ececd9d6d0673665e3e534ea9d92150812895feed",
+    "epoch-031.pt": "79a6fcb9a7459d95a7604f52695348454eb96b72280db94ba2808119d0c0e0bd",
+    "epoch-032.pt": "079e61f410d78eeff5a0961b1cf4f288134c97652c1cefb326be59e81d4fcfa2",
+    "epoch-033.pt": "7287769b52d548a51bdad5e307a884250e54207a8f99aa2cfb37544923772421",
+    "epoch-034.pt": "828ac44124cc2057acba47f0d1fed2f6980216ae004de880f5fd4ded5fbc5390",
+    "epoch-035.pt": "ed26e838771118c962f8f1397cb67cba444735499c2ea4272b191d4deb9b8458",
+    "final-test.json": "f1a6dad582e3e102151dc18baa8bdb1c563a28d35cf951a9503cccf70cb64bdf",
+    "metrics-000.json": "03eac8a63119941f251ad7b99612a6a96d93ffe835b2eb690cf3dc2bb3e93aaa",
+    "metrics-001.json": "96e7d81e1d7d699c5efee9641162f44450ab2e5fe73ca0a35ccfa8aaa3301d02",
+    "metrics-002.json": "25f3561916088fc0b1593601b69b5a85126d42075873bdc31344f47edf989965",
+    "metrics-003.json": "fc90cdb4a6b0314a357ca8eef3f0bf66c77e84b47ff67852a499dffad9645fd2",
+    "metrics-004.json": "70f262c0c8a6182b97aedb2284201c7d24d5c25b80d12f3e50e39a242fbb2229",
+    "metrics-005.json": "27a820a2ca830a52d59b5511ef22e55864e48f83f5975fc22017a32e2fb3f883",
+    "metrics-006.json": "1e05b224e94456feaa5549c52c52f127a484fa84a0d6d1996f542968a75ad60e",
+    "metrics-007.json": "e9fc2ab81008e3c0bc80595eb95bb9bb28d8542acd252bcfd472ed2ff2f4d191",
+    "metrics-008.json": "dbce644671c0fd79dae03b839d054dd55e0afd4408ca9292ac8dad014887b921",
+    "metrics-009.json": "24551a1d26fdfa15e4284ea1fd0694586c2a361e2bd9de418087a335f218c591",
+    "metrics-010.json": "e9df2a7a8f2d52a3ce54d24feecfbc2b7c50e9704ed031a72093431ff789d44d",
+    "metrics-011.json": "e19873f59d0205940635ebabb9ddafadeb7436f07c0a2a0c369e85fa294f6d57",
+    "metrics-012.json": "e404f1c54bdb168e98b83d844da87e03b8b69b7e270f0d9cd2c73575aa23055c",
+    "metrics-013.json": "21aeb433f1503d4c838d2f63d198a55983e1be703a08c6f8ebde1d72a9594c8a",
+    "metrics-014.json": "31147927c177f6a5c8a488427b692cd3df921960685cab40b99d19a75020604c",
+    "metrics-015.json": "ab767d65726414bf3577333585a648f2068db08dee718f5eefdf3a70d87d5c37",
+    "metrics-016.json": "bd38c1df474e6faa35583913fdf9db54cb0f8546becdd61ee6aa1d9d92c2559b",
+    "metrics-017.json": "0541e1929e45e3efac1a86e5a45f81940b643ab3ab932e2ee8e2f44ccb17a678",
+    "metrics-018.json": "1800b54b60d25d4bc94b2fd4b4ff2b17c3a78c7c9609d38c8051c3b53c5aec34",
+    "metrics-019.json": "2ac05dae4bb7a60538050c84ac540d54216029f07ccc0fe49890039c53e177ab",
+    "metrics-020.json": "8e574448fb13ca2a5cccc51c3383370f8f94a8a77ed446d335562e8e32e07d69",
+    "metrics-021.json": "3d2698adb46803f08fb7d0b162984349112ef2882426314943ac55ce6e079cb4",
+    "metrics-022.json": "55d00b5e9dc8cacbbfd54cd59e44f23fa50ea057f7b116fc14b433c5d6d9f8ea",
+    "metrics-023.json": "29a90b0163ade6b565635ab8788fb3c0e38ad11fddbdc2757449af1a1fd8149f",
+    "metrics-024.json": "49e5620c1db2f65688757f536caf9f244f1643da3d7cf0c10175e6cbffc9743e",
+    "metrics-025.json": "054d73609f28c11362cd9da3191d0dbd54f961a24306d00e2669666d05b605ee",
+    "metrics-026.json": "7aba9efdc8a372f9ac351514b0cecf061cf012880ebbffc79fd46d0378319910",
+    "metrics-027.json": "fffacb024facce40c118bd926354c64eb67df06c7d99579baa5dfcd931d894b0",
+    "metrics-028.json": "a083cca80eaa6b47db6d19464fdb28f11affdc34c1c30e54a3dec285e3f0c200",
+    "metrics-029.json": "a5619c08596fec723fc81deb6492703d8b39762309bab9d00f6443234340cec1",
+    "metrics-030.json": "4d016ee9987c7548c6afecf834aeb2bff30c30c09ae788a6a4285f595f2217c3",
+    "metrics-031.json": "7cef5cbb71cc26d9a9216d6ad149daffb8fb50b59e1eae4b2a33762f69d665dd",
+    "metrics-032.json": "f897040ff29f818ab93442f3e16a74230ac50db7ce4d0b766545b4a8eb9e8cf3",
+    "metrics-033.json": "c2e06ed26ed061f6a62806e6d59f5289786c3753087f5923a1e5fd13e7b70d65",
+    "metrics-034.json": "a59a611476f5775a7b8f3c07ef36b3e06c23ae664cd68ce05e11400f73bec3dc",
+    "metrics-035.json": "3202325c86d8b2758b57242bd907be6629211ba6b194b5d70bf3c7f9890df6bf",
+    "metrics.csv": "f6b26a40515b7bb48f26a38e32c7d1c053aed7949e201a9da449190bb34527bc",
+    "split.json": "1ce92986087f5844873a5eb4f644169411d4becb9b3c3883f846ebca7f92ab0a",
+    "summary.json": "8cf0e79f4aaa037f4f1635d1f5a03b36b294d0229106e1c405e5403232cd9193",
+    "tensorboard/events.out.tfevents.1793551218.구지현.28432.4": "891feeef2a5659c6b269442e23a92f05d1bc129b995c565d807b7aa2a08f3807"
+  },
+  "config": {
+    "epochs": 60,
+    "learning_rate": 0.001,
+    "batch_size": 25,
+    "seed": 7,
+    "validation_speakers": 25,
+    "patience": 5,
+    "embed_dim": 24,
+    "heads": 1,
+    "depth": 3,
+    "device": "cpu",
+    "threads": 4,
+    "initialization": "random evaluation model; acoustic features fixed",
+    "normalization": {
+      "mean": 3.2114971842610887,
+      "std": 4.043786503093931,
+      "source": "training speakers only; valid phones only"
+    },
+    "dataset_manifest_sha256": "4950e49fd6334274300e06ea65a3542b314b13b5a2c162f8d6646d55f46f9ab2",
+    "model_source_sha256": "e63a178f5d32221ebc1233a4fe32dc12a092f804360b1782a6159d3185b3be34",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "numpy": "2.4.6"
+    }
+  },
+  "summary": {
+    "status": "early_stopped",
+    "epochs_completed": 35,
+    "best_epoch": 30,
+    "best_validation_phone_mse": 0.16598650656023078,
+    "selection_metric": "validation phone MSE",
+    "test_evaluated": true,
+    "elapsed_seconds": 147.14246749999984
+  },
+  "historical_test_metrics": {
+    "phone": {
+      "mse": 0.08710446907924206,
+      "mae": 0.15562405386702258,
+      "pcc": 0.6081555769025441,
+      "n": 47369
+    },
+    "utterance": {
+      "accuracy": {
+        "mse": 1.1885728150324737,
+        "mae": 0.8082823601722717,
+        "pcc": 0.7076403568393395,
+        "n": 2500
+      },
+      "completeness": {
+        "mse": 0.2490251404137617,
+        "mae": 0.10527066278457642,
+        "pcc": 0.3046795905168526,
+        "n": 2500
+      },
+      "fluency": {
+        "mse": 0.8801268571202431,
+        "mae": 0.7275767206192016,
+        "pcc": 0.7563752960305099,
+        "n": 2500
+      },
+      "prosody": {
+        "mse": 0.8895510158329784,
+        "mae": 0.741634040927887,
+        "pcc": 0.7585806702969702,
+        "n": 2500
+      },
+      "total": {
+        "mse": 1.0868088564566962,
+        "mae": 0.780725441646576,
+        "pcc": 0.7404991092126092,
+        "n": 2500
+      }
+    },
+    "word": {
+      "accuracy": {
+        "mse": 2.348685089562589,
+        "mae": 0.7868286663972123,
+        "pcc": 0.5230045829726344,
+        "n": 15967
+      },
+      "stress": {
+        "mse": 0.18043924517105606,
+        "mae": 0.1454978526448639,
+        "pcc": 0.3439448044180552,
+        "n": 15967
+      },
+      "total": {
+        "mse": 1.805773245117045,
+        "mae": 0.7758583072550782,
+        "pcc": 0.5392340839429145,
+        "n": 15967
+      }
+    },
+    "units": {
+      "phone": "0–2 target scale",
+      "utterance_and_word": "0–10 target scale"
+    }
+  },
+  "test_policy": "historical only; never used for new model selection"
+}

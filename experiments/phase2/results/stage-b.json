@@ -1,0 +1,27 @@
+{
+  "stage": "B",
+  "real_wavs": 20,
+  "train": 16,
+  "validation": 4,
+  "run": "runs/ssl/stage-b-20261102-091227-355086",
+  "weight_change_l2": 0.870643310693612,
+  "reloaded_predictions_identical": true,
+  "encoder_all_frozen_no_gradients": true,
+  "feature_shape": [
+    20,
+    12,
+    1536
+  ],
+  "not_performance_evidence": true,
+  "resources": {
+    "wall_seconds": 16.708595699999933,
+    "process_cpu_seconds": 64.03125,
+    "mean_cpu_cores_used": 3.832234087751627,
+    "observed_peak_rss_bytes": 820514816,
+    "rss_at_start_bytes": 328613888,
+    "cuda_peak_allocated_bytes": 0,
+    "cuda_peak_reserved_bytes": 0,
+    "rss_sampling_interval_seconds": 0.05,
+    "paid_compute_usd": 0
+  }
+}

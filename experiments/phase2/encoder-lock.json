@@ -1,0 +1,12 @@
+{
+  "repository": "microsoft/wavlm-base-plus",
+  "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+  "license": "MIT (official model card links to Microsoft unilm license)",
+  "license_url": "https://github.com/microsoft/unilm/blob/master/LICENSE",
+  "files": [
+    {"file":"config.json","bytes":2232,"git_blob_sha1":"b7b4e5f6c410f71283a59e26250e40855ca99310"},
+    {"file":"preprocessor_config.json","bytes":215,"git_blob_sha1":"10f6def8c83d70a2b087a567dcf523b75152a80b"},
+    {"file":"pytorch_model.bin","bytes":377617425,"sha256":"3bb273a6ace99408b50cfc81afdbb7ef2de02da2eab0234e18db608ce692fe51"},
+    {"file":"README.md","bytes":3904,"git_blob_sha1":"1192671605727eff94113d3b599161892688b9d5"}
+  ]
+}

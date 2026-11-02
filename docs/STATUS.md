@@ -1,5 +1,25 @@
 # 현재 상태
 
+2026-11-02 · **Phase 2 Stage A–D 완료: Frozen WavLM 문장 평가 실험**
+
+- Baseline 01 `run-20261102-014018-444335`와 사용자가 수정한 GOPT 노트북을 보존했다.
+- 공식 Train 원음 2,500개 확보, 원본/GOP 라벨·해시·분할 감사 완료. 기존 2,000/500 화자 분할 유지.
+- 독립 JupyterLab 노트북의 13개 코드 셀을 실제 실행했다. 전체 학습 seed 7/19/42와 조기 종료·저장·복원을 검증했다.
+- Validation Prosody PCC: GOPT 0.8092, SSL 0.8253 ± 0.0109. Accuracy와 Total은 SSL 평균 성능이 낮았다.
+- Validation macro MSE: 평균 예측 3.9601, GOPT 1.3965, SSL 1.4602. 전반적인 우위는 입증하지 못했다.
+- 주 seed의 화자 bootstrap 차이 구간은 0을 포함한다. 과적합 차이가 커서 다음 실험은 헤드 크기 128→32로 정했다.
+- 원음 특징 처리 35분 42초, 세 head 학습 합계 약 2분 43초. 로컬 CPU, 관측 RSS 최대 1.57 GiB, 유료 지출 $0.
+- 새 Jupyter 커널에서 재학습 없이 Validation 500개 예측이 비트 단위로 복원됐다. 코드 테스트 94개 통과.
+- 이번 SSL 모델은 공식 Test로 평가하거나 튜닝하지 않았다. 음소 평가·개인 오류 진단·인코더 fine-tune은 아직 미구현이다.
+
+시작: `start-phase2.cmd` → [실행·복원 안내](PHASE2_GUIDE.md).
+상세: [실험 결과와 그래프](../experiments/phase2/README.md), [모델 조사·자원 계획](PHASE2_RESEARCH.md).
+아래는 이전 Phase 1의 이력이며 현재 연구의 우선순위/완료 상태와 구분한다.
+
+---
+
+## 이전 Phase 1 기록
+
 2026-11-02 · v0.1.0 · 공개 GOPT 실행과 직접 학습 노트북
 
 사용자가 직접 설정을 바꾸고 실행하는 [GOPT 노트북](../notebooks/SpeakingT_GOPT.ipynb)을 추가했다.

@@ -1,0 +1,49 @@
+{
+  "runs": {
+    "7": {
+      "run": "runs/ssl/notebook-full-seed7-20261102-095132-822399",
+      "files": {
+        "best.pt": "ea279e9edb0600d9ccd4761e962f7d003d7e1f5416fbbffaf3bd571ebf729437",
+        "initial.pt": "a8f28012eedca9e6c4e94e701308a1b7b347fcb5c4ca6209bf9a8d946181ed08",
+        "last.pt": "c85e3b2a3a6fc7c9982f63c3b6b5ea15af1055f24d26c94ef01dbdf8609be086",
+        "config.json": "60304616ef28d818d450b8f71ae1040d55c70a35d1bf549e04dcf70e8e110fad",
+        "split.json": "f505deadda27fd31de43a32c476e0adae6ffe502fa347e0cb7bb5911d6241fa7",
+        "summary.json": "aa0d3de0da4b7fc3e014fe1b393abbc63bde2ad610922970262489eb34471685",
+        "metrics.csv": "64e02a4b00ba594fad44a625436e88226502bd3adee81bcd0db57d1e601cfffd"
+      },
+      "source_sha256": "98bfc1c8a32d5670be05c908b78d2ac5a1f792e5befdbb26d6c0bcd615cbe856"
+    },
+    "19": {
+      "run": "runs/ssl/notebook-full-seed19-20261102-095238-584652",
+      "files": {
+        "best.pt": "190155fda12072d6f5a49ddeb89f6b1f8f68197030718439f5266161e70b0375",
+        "initial.pt": "2d6a3a5d3dcf7ee3fed7dbbce6c2184ef79d82f64ca844bc8d5a9126123a231a",
+        "last.pt": "9a50c6bd2640d7fd22fd81a3c79cb142d57e38ec29324a374b40c904194b45b6",
+        "config.json": "984fddb16f39c777fe13647c1c5b99a50b335cd279a8cbbefde764ad37d28eb2",
+        "split.json": "f505deadda27fd31de43a32c476e0adae6ffe502fa347e0cb7bb5911d6241fa7",
+        "summary.json": "8583f7cbdaca74a5a2a54723942f506ea4de4162d44a764f33badd1017425fae",
+        "metrics.csv": "0ec6c55746bf59e25800e3d5f4edd3d9b561f57417ac218d0c0618b406b0b33f"
+      },
+      "source_sha256": "98bfc1c8a32d5670be05c908b78d2ac5a1f792e5befdbb26d6c0bcd615cbe856"
+    },
+    "42": {
+      "run": "runs/ssl/notebook-full-seed42-20261102-095333-162712",
+      "files": {
+        "best.pt": "3c8988e86ee6dd70b04959b775912b357b7ebea215cf52ea1ad7cc861f6ed6e9",
+        "initial.pt": "9e7434820f83273b04d3d9ea8c6ed3685b06a6a936cf14e568935fbc5755d15c",
+        "last.pt": "f02cb108e0e918b9f2b4e510d0850d939e55a65f9a176d992047fedd0f5d2812",
+        "config.json": "b7f208defdfb0f91b7e6090585349ae7ddc12b96f795b18a20d8668ecac4821e",
+        "split.json": "f505deadda27fd31de43a32c476e0adae6ffe502fa347e0cb7bb5911d6241fa7",
+        "summary.json": "e8f6bcd2df3ad318b103f2183c7ec19e2325f036b4d07fb1a1f07495f20fc0d5",
+        "metrics.csv": "af63448c92e1c962b71bbfbeab1cb021883103fff1db7d50b3cf5b08eb226af7"
+      },
+      "source_sha256": "98bfc1c8a32d5670be05c908b78d2ac5a1f792e5befdbb26d6c0bcd615cbe856"
+    }
+  },
+  "executed_notebook": "reports/phase2/notebook-full-verified.ipynb",
+  "executed_notebook_sha256": "b8ff2ffdc85c6e3a1222b9eea8e100a2d3804aed008ae9bb5c60b09bae4da54c",
+  "executed_code_cells": 13,
+  "notebook_source_sha256": "3ba7333d157e75655139f842cb4af5269e158ff3068747aed918eef835473f21",
+  "protocol_sha256": "cd09134c5fbd508ef436c346bd5b4ab115efdf0caa181bc496140d1330fb180d",
+  "official_test_evaluated": false
+}

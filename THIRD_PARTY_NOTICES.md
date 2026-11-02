@@ -1,5 +1,21 @@
 # Third-party components
 
+Phase 2 loads the official Microsoft WavLM Base+ checkpoint, revision
+`4c66d4806a428f2e922ccfa1a962776e232d487b`, from
+[Microsoft's model repository](https://huggingface.co/microsoft/wavlm-base-plus).
+Its model card links to the [Microsoft unilm MIT license](https://github.com/microsoft/unilm/blob/master/LICENSE).
+The weights are downloaded to an ignored local cache and are not redistributed here.
+Transformers is installed as a dependency; no model repository custom code is executed.
+Our frozen statistics-pooling regression head is an implementation for this project,
+not a claim to reproduce MultiPA, E2E-R, or the Interspeech 2022 SSL scoring architecture.
+
+Phase 2 downloads the official SpeechOcean762 **training partition** WAVs at the
+same pinned corpus revision below. It preserves the waveform, applies the official
+WavLM per-utterance normalization, and derives temporal mean/standard-deviation
+features from Transformer layers. Speaker membership follows the preserved
+Baseline 01 split. Corpus attribution and CC BY 4.0 terms apply to these derived
+features; original waveforms and features remain in ignored local directories.
+
 `speakingt/vendor/gopt.py` is copied without algorithm changes from
 [YuanGongND/gopt](https://github.com/YuanGongND/gopt), commit
 `bed909daf8eca035095871e51642525acc5b9b55`, `src/models/gopt.py`.

@@ -1,0 +1,578 @@
+{
+  "scope": "development validation only; not independent generalization test",
+  "units": "same four utterance targets in 0–10 units; no phone comparison",
+  "comparison_caveat": "GOPT uses canonical phones and multi-granularity objectives; fixed epoch30 selected by validation phone MSE. SSL uses waveform statistics and selects by utterance macro MSE. Not an equal-input/objective ablation.",
+  "records": [
+    {
+      "run": "runs/ssl/notebook-full-seed7-20261102-095132-822399",
+      "seed": 7,
+      "summary": {
+        "status": "early_stopped",
+        "epochs_completed": 73,
+        "best_epoch": 53,
+        "best_validation_macro_mse": 1.4940850736000506,
+        "test_evaluated": false
+      },
+      "train": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 0.04203961065549161,
+            "mae": 0.14663912385702133,
+            "pcc": 0.9928102180020912,
+            "n": 2000
+          },
+          "fluency": {
+            "mse": 0.03982630962114538,
+            "mae": 0.14598425137996673,
+            "pcc": 0.9920522513635571,
+            "n": 2000
+          },
+          "prosody": {
+            "mse": 0.031553126872972626,
+            "mae": 0.13521525490283967,
+            "pcc": 0.9925231992098257,
+            "n": 2000
+          },
+          "total": {
+            "mse": 0.04999293656205471,
+            "mae": 0.15728757607936858,
+            "pcc": 0.992097266971062,
+            "n": 2000
+          }
+        },
+        "macro_mse": 0.04085299592791608,
+        "macro_mae": 0.14628155155479908,
+        "macro_pcc": 0.992370733886634
+      },
+      "validation": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 1.8785825352765253,
+            "mae": 1.02222243976593,
+            "pcc": 0.7245782630393294,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 1.2984225614431162,
+            "mae": 0.7973030142784119,
+            "pcc": 0.8106392106497007,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 1.2350694405116998,
+            "mae": 0.8101211118698121,
+            "pcc": 0.814659319957097,
+            "n": 500
+          },
+          "total": {
+            "mse": 1.5642657571688614,
+            "mae": 0.9229037804603577,
+            "pcc": 0.7700398242201638,
+            "n": 500
+          }
+        },
+        "macro_mse": 1.4940850736000506,
+        "macro_mae": 0.8881375865936278,
+        "macro_pcc": 0.7799791544665727
+      },
+      "mean_baseline": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 4.196814287677766,
+            "mae": 1.5030119972229004,
+            "pcc": null,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 3.962476576007897,
+            "mae": 1.4727339916229247,
+            "pcc": null,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 3.625276480049164,
+            "mae": 1.4648480224609375,
+            "pcc": null,
+            "n": 500
+          },
+          "total": {
+            "mse": 4.055724725723303,
+            "mae": 1.5472999687194824,
+            "pcc": null,
+            "n": 500
+          }
+        },
+        "macro_mse": 3.9600730173645324,
+        "macro_mae": 1.4969734950065612,
+        "macro_pcc": null
+      },
+      "resources": {
+        "wall_seconds": 64.0224817000003,
+        "process_cpu_seconds": 205.3125,
+        "mean_cpu_cores_used": 3.2068813102569727,
+        "observed_peak_rss_bytes": 1493868544,
+        "rss_at_start_bytes": 958824448,
+        "cuda_peak_allocated_bytes": 0,
+        "cuda_peak_reserved_bytes": 0,
+        "rss_sampling_interval_seconds": 0.05,
+        "paid_compute_usd": 0
+      },
+      "checkpoint_sha256": "ea279e9edb0600d9ccd4761e962f7d003d7e1f5416fbbffaf3bd571ebf729437"
+    },
+    {
+      "run": "runs/ssl/notebook-full-seed19-20261102-095238-584652",
+      "seed": 19,
+      "summary": {
+        "status": "early_stopped",
+        "epochs_completed": 35,
+        "best_epoch": 15,
+        "best_validation_macro_mse": 1.4558969398888555,
+        "test_evaluated": false
+      },
+      "train": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 0.14355067195967536,
+            "mae": 0.2960151519775391,
+            "pcc": 0.9716306867420754,
+            "n": 2000
+          },
+          "fluency": {
+            "mse": 0.08300294411916409,
+            "mae": 0.22956266891956328,
+            "pcc": 0.9796122095143924,
+            "n": 2000
+          },
+          "prosody": {
+            "mse": 0.09760805859901092,
+            "mae": 0.24742464852333068,
+            "pcc": 0.9755399944408358,
+            "n": 2000
+          },
+          "total": {
+            "mse": 0.11808562287487473,
+            "mae": 0.2715684998035431,
+            "pcc": 0.9760145312226526,
+            "n": 2000
+          }
+        },
+        "macro_mse": 0.11056182438818128,
+        "macro_mae": 0.26114274230599405,
+        "macro_pcc": 0.9756993554799891
+      },
+      "validation": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 1.7552550349065104,
+            "mae": 0.9956430168151855,
+            "pcc": 0.7512496250436528,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 1.3827878433864607,
+            "mae": 0.8127127666473388,
+            "pcc": 0.8127605971556605,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 1.2012691824107042,
+            "mae": 0.7973182888031006,
+            "pcc": 0.8365027767075646,
+            "n": 500
+          },
+          "total": {
+            "mse": 1.4842756988517465,
+            "mae": 0.9114452037811279,
+            "pcc": 0.7959021221100301,
+            "n": 500
+          }
+        },
+        "macro_mse": 1.4558969398888555,
+        "macro_mae": 0.8792798190116883,
+        "macro_pcc": 0.799103780254227
+      },
+      "mean_baseline": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 4.196814287677766,
+            "mae": 1.5030119972229004,
+            "pcc": null,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 3.962476576007897,
+            "mae": 1.4727339916229247,
+            "pcc": null,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 3.625276480049164,
+            "mae": 1.4648480224609375,
+            "pcc": null,
+            "n": 500
+          },
+          "total": {
+            "mse": 4.055724725723303,
+            "mae": 1.5472999687194824,
+            "pcc": null,
+            "n": 500
+          }
+        },
+        "macro_mse": 3.9600730173645324,
+        "macro_mae": 1.4969734950065612,
+        "macro_pcc": null
+      },
+      "resources": {
+        "wall_seconds": 52.49004960000002,
+        "process_cpu_seconds": 147.109375,
+        "mean_cpu_cores_used": 2.802614516866449,
+        "observed_peak_rss_bytes": 1608593408,
+        "rss_at_start_bytes": 1223139328,
+        "cuda_peak_allocated_bytes": 0,
+        "cuda_peak_reserved_bytes": 0,
+        "rss_sampling_interval_seconds": 0.05,
+        "paid_compute_usd": 0
+      },
+      "checkpoint_sha256": "190155fda12072d6f5a49ddeb89f6b1f8f68197030718439f5266161e70b0375"
+    },
+    {
+      "run": "runs/ssl/notebook-full-seed42-20261102-095333-162712",
+      "seed": 42,
+      "summary": {
+        "status": "early_stopped",
+        "epochs_completed": 26,
+        "best_epoch": 6,
+        "best_validation_macro_mse": 1.430547315507715,
+        "test_evaluated": false
+      },
+      "train": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 0.30279213228200147,
+            "mae": 0.41995801889896395,
+            "pcc": 0.940161192268841,
+            "n": 2000
+          },
+          "fluency": {
+            "mse": 0.19356986370087784,
+            "mae": 0.3483894058465958,
+            "pcc": 0.9518757397738039,
+            "n": 2000
+          },
+          "prosody": {
+            "mse": 0.21187191778356418,
+            "mae": 0.36536919307708743,
+            "pcc": 0.9450526048440937,
+            "n": 2000
+          },
+          "total": {
+            "mse": 0.2627743066880322,
+            "mae": 0.3967707768678665,
+            "pcc": 0.9460367210366275,
+            "n": 2000
+          }
+        },
+        "macro_mse": 0.24275205511361891,
+        "macro_mae": 0.38262184867262844,
+        "macro_pcc": 0.9457815644808415
+      },
+      "validation": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 1.757801115110652,
+            "mae": 0.9878806972503662,
+            "pcc": 0.7567115392776067,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 1.3710347029827794,
+            "mae": 0.8152390546798706,
+            "pcc": 0.8088062992043192,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 1.1628455707801186,
+            "mae": 0.7898890724182129,
+            "pcc": 0.8247312449273015,
+            "n": 500
+          },
+          "total": {
+            "mse": 1.4305078731573098,
+            "mae": 0.8915072722434998,
+            "pcc": 0.8039594552827914,
+            "n": 500
+          }
+        },
+        "macro_mse": 1.430547315507715,
+        "macro_mae": 0.8711290241479874,
+        "macro_pcc": 0.7985521346730047
+      },
+      "mean_baseline": {
+        "unit": "utterance; target scale 0–10; predictions not clipped",
+        "targets": {
+          "accuracy": {
+            "mse": 4.196814287677766,
+            "mae": 1.5030119972229004,
+            "pcc": null,
+            "n": 500
+          },
+          "fluency": {
+            "mse": 3.962476576007897,
+            "mae": 1.4727339916229247,
+            "pcc": null,
+            "n": 500
+          },
+          "prosody": {
+            "mse": 3.625276480049164,
+            "mae": 1.4648480224609375,
+            "pcc": null,
+            "n": 500
+          },
+          "total": {
+            "mse": 4.055724725723303,
+            "mae": 1.5472999687194824,
+            "pcc": null,
+            "n": 500
+          }
+        },
+        "macro_mse": 3.9600730173645324,
+        "macro_mae": 1.4969734950065612,
+        "macro_pcc": null
+      },
+      "resources": {
+        "wall_seconds": 46.77841180000041,
+        "process_cpu_seconds": 128.984375,
+        "mean_cpu_cores_used": 2.7573483159596894,
+        "observed_peak_rss_bytes": 1691090944,
+        "rss_at_start_bytes": 1337606144,
+        "cuda_peak_allocated_bytes": 0,
+        "cuda_peak_reserved_bytes": 0,
+        "rss_sampling_interval_seconds": 0.05,
+        "paid_compute_usd": 0
+      },
+      "checkpoint_sha256": "3c8988e86ee6dd70b04959b775912b357b7ebea215cf52ea1ad7cc861f6ed6e9"
+    }
+  ],
+  "seed_aggregate": {
+    "accuracy": {
+      "mse": {
+        "mean": 1.797212895097896,
+        "sample_std": 0.07047967358182922,
+        "all_seeds": [
+          1.8785825352765253,
+          1.7552550349065104,
+          1.757801115110652
+        ],
+        "gopt": 1.5118540121959247
+      },
+      "mae": {
+        "mean": 1.001915384610494,
+        "sample_std": 0.018009602107515826,
+        "all_seeds": [
+          1.02222243976593,
+          0.9956430168151855,
+          0.9878806972503662
+        ],
+        "gopt": 0.9215053024291993
+      },
+      "pcc": {
+        "mean": 0.7441798091201962,
+        "sample_std": 0.017193707667196998,
+        "all_seeds": [
+          0.7245782630393294,
+          0.7512496250436528,
+          0.7567115392776067
+        ],
+        "gopt": 0.7844964448384466
+      }
+    },
+    "fluency": {
+      "mse": {
+        "mean": 1.3507483692707856,
+        "sample_std": 0.04569493080146625,
+        "all_seeds": [
+          1.2984225614431162,
+          1.3827878433864607,
+          1.3710347029827794
+        ],
+        "gopt": 1.387086468594629
+      },
+      "mae": {
+        "mean": 0.8084182785352071,
+        "sample_std": 0.009708622838982888,
+        "all_seeds": [
+          0.7973030142784119,
+          0.8127127666473388,
+          0.8152390546798706
+        ],
+        "gopt": 0.8875775890350341
+      },
+      "pcc": {
+        "mean": 0.8107353690032268,
+        "sample_std": 0.001978901941408442,
+        "all_seeds": [
+          0.8106392106497007,
+          0.8127605971556605,
+          0.8088062992043192
+        ],
+        "gopt": 0.828895147153158
+      }
+    },
+    "prosody": {
+      "mse": {
+        "mean": 1.1997280645675075,
+        "sample_std": 0.036136589807369265,
+        "all_seeds": [
+          1.2350694405116998,
+          1.2012691824107042,
+          1.1628455707801186
+        ],
+        "gopt": 1.3055001314117594
+      },
+      "mae": {
+        "mean": 0.7991094910303752,
+        "sample_std": 0.010234263977297584,
+        "all_seeds": [
+          0.8101211118698121,
+          0.7973182888031006,
+          0.7898890724182129
+        ],
+        "gopt": 0.8877517881393433
+      },
+      "pcc": {
+        "mean": 0.8252977805306543,
+        "sample_std": 0.01093274314363907,
+        "all_seeds": [
+          0.814659319957097,
+          0.8365027767075646,
+          0.8247312449273015
+        ],
+        "gopt": 0.8092019718038199
+      }
+    },
+    "total": {
+      "mse": {
+        "mean": 1.4930164430593058,
+        "sample_std": 0.0673059680919041,
+        "all_seeds": [
+          1.5642657571688614,
+          1.4842756988517465,
+          1.4305078731573098
+        ],
+        "gopt": 1.3814158805033965
+      },
+      "mae": {
+        "mean": 0.9086187521616619,
+        "sample_std": 0.015887945229660555,
+        "all_seeds": [
+          0.9229037804603577,
+          0.9114452037811279,
+          0.8915072722434998
+        ],
+        "gopt": 0.8850101070404053
+      },
+      "pcc": {
+        "mean": 0.789967133870995,
+        "sample_std": 0.01772155204558297,
+        "all_seeds": [
+          0.7700398242201638,
+          0.7959021221100301,
+          0.8039594552827914
+        ],
+        "gopt": 0.8031363587089478
+      }
+    }
+  },
+  "gopt": {
+    "unit": "utterance; target scale 0–10; predictions not clipped",
+    "targets": {
+      "accuracy": {
+        "mse": 1.5118540121959247,
+        "mae": 0.9215053024291993,
+        "pcc": 0.7844964448384466,
+        "n": 500
+      },
+      "fluency": {
+        "mse": 1.387086468594629,
+        "mae": 0.8875775890350341,
+        "pcc": 0.828895147153158,
+        "n": 500
+      },
+      "prosody": {
+        "mse": 1.3055001314117594,
+        "mae": 0.8877517881393433,
+        "pcc": 0.8092019718038199,
+        "n": 500
+      },
+      "total": {
+        "mse": 1.3814158805033965,
+        "mae": 0.8850101070404053,
+        "pcc": 0.8031363587089478,
+        "n": 500
+      }
+    },
+    "macro_mse": 1.3964641231764272,
+    "macro_mae": 0.8954611966609956,
+    "macro_pcc": 0.8064324806260931
+  },
+  "primary_seed7_minus_gopt_speaker_bootstrap_95pct": {
+    "accuracy": {
+      "mse": {
+        "low": -0.11527917989131509,
+        "high": 0.9167218701548987,
+        "valid_replicates": 1000
+      },
+      "pcc": {
+        "low": -0.14086577643249554,
+        "high": 0.019503090255055297,
+        "valid_replicates": 1000
+      }
+    },
+    "fluency": {
+      "mse": {
+        "low": -0.4814165380875279,
+        "high": 0.31929845811443064,
+        "valid_replicates": 1000
+      },
+      "pcc": {
+        "low": -0.07427674649283385,
+        "high": 0.06368971486030578,
+        "valid_replicates": 1000
+      }
+    },
+    "prosody": {
+      "mse": {
+        "low": -0.4108711537142866,
+        "high": 0.261704538575128,
+        "valid_replicates": 1000
+      },
+      "pcc": {
+        "low": -0.047532309412222834,
+        "high": 0.08245063864458019,
+        "valid_replicates": 1000
+      }
+    },
+    "total": {
+      "mse": {
+        "low": -0.25698185767528736,
+        "high": 0.6247498204507695,
+        "valid_replicates": 1000
+      },
+      "pcc": {
+        "low": -0.09314693393261261,
+        "high": 0.04331700000392087,
+        "valid_replicates": 1000
+      }
+    }
+  },
+  "uncertainty_note": "1000 paired speaker-cluster resamples; development/model-selection uncertainty remains; not adjusted for multiple targets",
+  "test_evaluated": false
+}

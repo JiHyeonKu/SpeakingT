@@ -1,0 +1,28 @@
+{
+  "verified_date_local": "2026-11-02",
+  "os": "Windows-10-10.0.26200-SP0",
+  "python": "3.11.4",
+  "cpu": "Intel Core i7-1360P",
+  "physical_cores": 12,
+  "logical_cores": 16,
+  "ram_bytes": 16847839232,
+  "gpus_detected_by_windows": [
+    "Intel Iris Xe Graphics",
+    "Intel Arc A350M Graphics"
+  ],
+  "gpu_note": "WMI AdapterRAM is not used as verified VRAM capacity; no NVIDIA device reported; current PyTorch build is CPU-only",
+  "cuda_available": false,
+  "packages": {
+    "torch": "2.15.0+cpu",
+    "numpy": "2.4.6",
+    "transformers": "4.57.6",
+    "huggingface-hub": "0.36.2",
+    "safetensors": "0.8.0",
+    "psutil": "7.2.2",
+    "jupyterlab": "4.6.5",
+    "nbclient": "0.11.0"
+  },
+  "original_gopt_notebook_sha256": "a63cdb8def01b3ef422119bfeaa883b74eaaeee4e73a2d27a1a0e9eb1cf19a0a",
+  "original_git_head": "996a8d2",
+  "paid_compute_usd": 0
+}

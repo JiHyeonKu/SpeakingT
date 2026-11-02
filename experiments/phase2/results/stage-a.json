@@ -1,0 +1,27 @@
+{
+  "model_parameters": 94381936,
+  "trainable_encoder_parameters": 0,
+  "device": "cpu",
+  "resources": {
+    "wall_seconds": 76.45401830000003,
+    "process_cpu_seconds": 17.140625,
+    "mean_cpu_cores_used": 0.22419521407941476,
+    "observed_peak_rss_bytes": 323010560,
+    "rss_at_start_bytes": 204955648,
+    "cuda_peak_allocated_bytes": 0,
+    "cuda_peak_reserved_bytes": 0,
+    "rss_sampling_interval_seconds": 0.05,
+    "paid_compute_usd": 0
+  },
+  "provenance": {
+    "repository": "microsoft/wavlm-base-plus",
+    "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+    "encoder_lock_sha256": "c0aed3d6923bbabf6f8168ed7002f45fe0b5907487ec73a3ff7db644e11d34bd",
+    "feature_version": "wavlm-base-plus-layers1-12-population-mean-std-fp32-v1",
+    "extract_source_sha256": "ffadeeb45badfa927142eeb96f111ccdce86a54a9f3e9042cad14c78afc3f9ef",
+    "transformers": "4.57.6",
+    "torch": "2.15.0+cpu",
+    "device": "cpu",
+    "dtype": "float32"
+  }
+}
