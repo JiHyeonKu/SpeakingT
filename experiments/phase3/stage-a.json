@@ -1,0 +1,68 @@
+{
+  "real_wavs": 2,
+  "native_forward_max_abs_error": 1.1920928955078125e-07,
+  "batch_vs_single_pooling_max_abs_error": 4.76837158203125e-07,
+  "padding_values_ignored": true,
+  "warm_start_matches_phase2_head": true,
+  "feature_shape": [
+    2,
+    12,
+    1536
+  ],
+  "valid_frames": [
+    216,
+    165
+  ],
+  "gradient": {
+    "encoder": {
+      "parameters": 14176808,
+      "with_gradient": 38,
+      "norm": 0.024964046925151986,
+      "finite": true
+    },
+    "head": {
+      "parameters": 197264,
+      "with_gradient": 5,
+      "norm": 0.11494239903235265,
+      "finite": true
+    },
+    "frozen_gradient_tensors": 0
+  },
+  "per_layer_update_l2": {
+    "10": 0.02518270608827577,
+    "11": 0.025684514789040564
+  },
+  "frozen_sha256_unchanged": true,
+  "initialization": {
+    "initialization": "phase2_head_warm_start",
+    "source_run": "runs/ssl/notebook-full-seed7-20261102-103405-853366",
+    "source_checkpoint_sha256": "5a18b488e1c6a96eaf1207e68579ce7117e0f404cf565d136c5147ee0ffced64",
+    "source_epoch": 8,
+    "normalization": "fixed Phase 2 statistics fitted on the original 2000 training utterances"
+  },
+  "environment": {
+    "python": "3.11.4",
+    "os": "Windows-10-10.0.26200-SP0",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.6",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2"
+    },
+    "ram_bytes": 16847839232,
+    "cuda": false,
+    "gpu": null,
+    "gpu_vram_bytes": 0
+  },
+  "resources": {
+    "wall_seconds": 115.24890049999885,
+    "process_cpu_seconds": 104.828125,
+    "mean_cpu_cores_used": 0.9095802610281826,
+    "observed_peak_rss_bytes": 1016983552,
+    "rss_at_start_bytes": 209715200,
+    "cuda_peak_allocated_bytes": 0,
+    "cuda_peak_reserved_bytes": 0,
+    "rss_sampling_interval_seconds": 0.05,
+    "paid_compute_usd": 0
+  }
+}
