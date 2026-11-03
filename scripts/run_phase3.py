@@ -1,6 +1,5 @@
 """Bounded raw-WAV partial fine-tuning CLI, shared with the Jupyter notebook."""
 import argparse
-from dataclasses import replace
 from pathlib import Path
 import sys
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
@@ -15,6 +14,12 @@ def main():
     parser.add_argument('--epochs',type=int,default=1)
     parser.add_argument('--batch-size',type=int,default=2)
     parser.add_argument('--accumulation',type=int,default=2)
+    parser.add_argument('--seed',type=int,default=7)
+    parser.add_argument('--encoder-lr',type=float,default=1e-5)
+    parser.add_argument('--head-lr',type=float,default=1e-4)
+    parser.add_argument('--patience',type=int,default=3)
+    parser.add_argument('--threads',type=int,default=4)
+    parser.add_argument('--run-dir',help='New directory only; existing runs are never overwritten')
     parser.add_argument('--allow-full',action='store_true')
     parser.add_argument('--fresh',action='store_true')
     parser.add_argument('--warm-start',default=p3.WARM_RUN)
@@ -28,8 +33,10 @@ def main():
         print(result); return
     cfg=p3.Config(stage=args.stage,device=args.device,precision=args.precision,top_layers=args.top_layers,
                   epochs=args.epochs,batch_size=args.batch_size,accumulation=args.accumulation,
+                  seed=args.seed,encoder_lr=args.encoder_lr,head_lr=args.head_lr,
+                  patience=args.patience,threads=args.threads,
                   allow_full=args.allow_full,warm_start=None if args.fresh else args.warm_start)
-    path=p3.run(cfg,resume=args.resume)
+    path=p3.run(cfg,run_dir=args.run_dir,resume=args.resume)
     print('Saved:',path)
 
 if __name__=='__main__': main()

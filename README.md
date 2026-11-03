@@ -1,10 +1,12 @@
 # SpeakingT
 
-**Phase 2:** 공개 SSL 인코더 기반 발음 평가 연구를 진행합니다. [새 JupyterLab 실행 안내](docs/PHASE2_GUIDE.md),
-[모델 선정·데이터 감사·자원 계획](docs/PHASE2_RESEARCH.md), [실험 기록](experiments/phase2/README.md).
-Windows에서는 `start-phase2.cmd`로 독립 노트북을 엽니다. 기존 GOPT는 Baseline 01로 보존합니다.
+**Phase 3:** WavLM Base+의 상위 Transformer 층을 실제 WAV로 fine-tuning합니다.
+[JupyterLab 실행·복원·GPU 준비 안내](docs/PHASE3_GUIDE.md), [실제 CPU 검증 결과](experiments/phase3/README.md).
+Windows에서 `start-phase3.cmd`를 실행하면 기본 20개 WAV / CPU / 1 epoch 검증을 시작할 수 있습니다.
+새 커널 복원·중단 후 재개·103개 테스트를 검증했습니다. GPU 전체 학습과 성능 향상 검증은 아직 남아 있습니다.
 
-**현재 연구는 [Phase 2 실행 안내](docs/PHASE2_GUIDE.md)부터 시작하세요.** 이전 기능 전체 사용법은 [START_HERE.md](START_HERE.md)에 보존했습니다.
+기존 GOPT와 [Phase 2 Frozen WavLM](docs/PHASE2_GUIDE.md), `start-phase2.cmd`, 기존 checkpoint는 보존했습니다.
+이전 기능 전체 사용법은 [START_HERE.md](START_HERE.md)에 있습니다.
 
 영어 발음·유창성·운율 평가 모델을 직접 학습하고 동일한 화자 분할에서 성능을 검증하는 개인 연구 프로젝트입니다.
 현재는 JupyterLab 기반 공개 데이터 실험을 우선하며 앱 제작은 범위에 포함하지 않습니다.

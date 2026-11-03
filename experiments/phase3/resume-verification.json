@@ -1,0 +1,32 @@
+{
+  "continuous_run": "runs/phase3/20261103-090843-541144",
+  "resumed_run": "runs/phase3/20261103-090743-101198",
+  "epoch": 2,
+  "all_checked_fields_bitwise_equal": true,
+  "checked_fields": [
+    "model",
+    "optimizer",
+    "scheduler",
+    "scaler",
+    "rng_cpu",
+    "rng_python",
+    "rng_cuda",
+    "epoch",
+    "best",
+    "best_epoch",
+    "stale",
+    "identity",
+    "row_ids",
+    "row_splits",
+    "trainable_names",
+    "source_sha256"
+  ],
+  "model_tensors_checked": 255,
+  "validation_predictions": 4,
+  "validation_predictions_bitwise_equal": true,
+  "checkpoint_sha256": [
+    "f398100c9b3a38827a40de9af695a12871db5cac0f9a58edcbf33cf3b269d285",
+    "3b2dfe8c7f8dd2d37c4013c9871945ba8dded9144a8fe650c7647810b79d05d9"
+  ],
+  "scope": "CPU smoke correctness; not a performance experiment"
+}

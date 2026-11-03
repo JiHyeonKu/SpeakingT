@@ -107,4 +107,33 @@ class PartialTests(unittest.TestCase):
             p.train_epoch(b,items,replace(cfg,batch_size=5,accumulation=1),optb,torch.amp.GradScaler('cuda',enabled=False),1)
         for x,y in zip(a.head.parameters(),b.head.parameters()):torch.testing.assert_close(x,y,rtol=1e-5,atol=1e-7)
 
+    def test_fresh_statistics_use_training_rows_only(self):
+        import torch
+        from speakingt import partial_wavlm as p
+        model=self.model()
+        rows=[{'id':'a','split':'train','targets':[2.,3.,4.,5.]},
+              {'id':'b','split':'validation','targets':[10.,10.,10.,10.]}]
+        calls=[]
+        def dataset(selected):
+            calls.extend(r['id'] for r in selected)
+            return [(torch.ones(640),torch.tensor(r['targets']),r['id']) for r in selected]
+        values=torch.arange(12*32,dtype=torch.float32).reshape(1,12,32)
+        with patch.object(p,'PartialWavLM',return_value=model),patch.object(p,'WaveDataset',side_effect=dataset), \
+             patch.object(model,'features',return_value=(values,None)):
+            result,provenance=p.initialize_model(model.cfg,rows)
+        self.assertEqual(calls,['a'])
+        torch.testing.assert_close(result.mean,values[0])
+        torch.testing.assert_close(result.std,torch.full_like(result.std,1e-5))
+        torch.testing.assert_close(result.head.network[-1].bias,torch.tensor(rows[0]['targets'])/10)
+        self.assertEqual(provenance['initialization'],'fresh_head')
+
+    def test_checkpoint_provenance_and_source_mismatch_rejected(self):
+        from speakingt import partial_wavlm as p
+        with tempfile.TemporaryDirectory() as d,patch.object(p,'data_identity',return_value={'revision':'expected'}):
+            path=Path(d)/'last.pt'
+            p.atomic_checkpoint(path,{'schema':p.SCHEMA,'identity':{'revision':'wrong'}})
+            with self.assertRaisesRegex(ValueError,'provenance'):p.restore(path)
+            p.atomic_checkpoint(path,{'schema':p.SCHEMA,'identity':{'revision':'expected'},'source_sha256':'wrong'})
+            with self.assertRaisesRegex(ValueError,'Training code differs'):p.restore(path)
+
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,45 @@
+{
+  "verified_date": "2026-11-03",
+  "runs": {
+    "initial": {
+      "run": "runs/phase3/20261102-172648-542194",
+      "best_checkpoint_sha256": "b674917d4a0a104eb9860fbb67efb89d22ed373ff12d9698ba83e7421cbdb87a",
+      "last_checkpoint_sha256": "3d607a430afbda2b927cf18535f5b9c2c95c7ace9dfb04c13ae18be28f2a9762",
+      "source_sha256": "7926381899096388cf3f17b4cfbb3298a08bd1369441e7ef580a1af23c634882"
+    },
+    "resumed": {
+      "run": "runs/phase3/20261103-090743-101198",
+      "best_checkpoint_sha256": "b674917d4a0a104eb9860fbb67efb89d22ed373ff12d9698ba83e7421cbdb87a",
+      "last_checkpoint_sha256": "3b2dfe8c7f8dd2d37c4013c9871945ba8dded9144a8fe650c7647810b79d05d9",
+      "source_sha256": "7926381899096388cf3f17b4cfbb3298a08bd1369441e7ef580a1af23c634882"
+    },
+    "continuous": {
+      "run": "runs/phase3/20261103-090843-541144",
+      "best_checkpoint_sha256": "06f25c11497e55e1476f62a8153640ff8824db74b60104bd1d3a781352ef07ea",
+      "last_checkpoint_sha256": "f398100c9b3a38827a40de9af695a12871db5cac0f9a58edcbf33cf3b269d285",
+      "source_sha256": "7926381899096388cf3f17b4cfbb3298a08bd1369441e7ef580a1af23c634882"
+    }
+  },
+  "notebooks": [
+    {
+      "file": "notebook-stage-ab.ipynb",
+      "sha256": "a80b9f52a1c3bbe28f3254819446ea8c47163544e641b79046fc30c5d9492dd5",
+      "executed_code_cells": 10,
+      "errors": 0
+    },
+    {
+      "file": "notebook-fresh-restore.ipynb",
+      "sha256": "43d1dbd5a6fc0c5f800c4bc0ae61eb1ee3536e248cbdeed21e676d61d14baaa3",
+      "executed_code_cells": 3,
+      "errors": 0
+    }
+  ],
+  "tests": {
+    "passed": 103,
+    "seconds": 10.903,
+    "log_sha256": "73868eb2178d2acf46ded86e5571b38e7201b9eed606d56de3cd371295434710"
+  },
+  "gpu_executed": false,
+  "paid_compute_usd": 0,
+  "original_test_used": false
+}

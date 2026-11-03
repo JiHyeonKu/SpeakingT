@@ -1,0 +1,59 @@
+{
+  "config": {
+    "top_layers": 2,
+    "hidden": 128,
+    "dropout": 0.5,
+    "encoder_lr": 1e-05,
+    "head_lr": 0.0001,
+    "weight_decay": 0.01,
+    "batch_size": 2,
+    "accumulation": 2,
+    "clip_norm": 1.0,
+    "epochs": 2,
+    "patience": 3,
+    "seed": 7,
+    "threads": 4,
+    "device": "cpu",
+    "precision": "fp32",
+    "stage": "smoke",
+    "allow_full": false,
+    "warm_start": "runs/ssl/notebook-full-seed7-20261102-103405-853366"
+  },
+  "initialization": {
+    "initialization": "phase2_head_warm_start",
+    "source_run": "runs/ssl/notebook-full-seed7-20261102-103405-853366",
+    "source_checkpoint_sha256": "5a18b488e1c6a96eaf1207e68579ce7117e0f404cf565d136c5147ee0ffced64",
+    "source_epoch": 8,
+    "normalization": "fixed Phase 2 statistics fitted on the original 2000 training utterances"
+  },
+  "identity": {
+    "manifest_sha256": "39a7c7f86b701d37a40d82c2df8d3e7897ab53bd5fb5d2e34cb19bcebba170d7",
+    "split_sha256": "1ce92986087f5844873a5eb4f644169411d4becb9b3c3883f846ebca7f92ab0a",
+    "encoder_lock_sha256": "c0aed3d6923bbabf6f8168ed7002f45fe0b5907487ec73a3ff7db644e11d34bd",
+    "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+    "targets": [
+      "accuracy",
+      "fluency",
+      "prosody",
+      "total"
+    ]
+  },
+  "environment": {
+    "python": "3.11.4",
+    "os": "Windows-10-10.0.26200-SP0",
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "4.57.6",
+      "numpy": "2.4.6",
+      "psutil": "7.2.2"
+    },
+    "ram_bytes": 16847839232,
+    "cuda": false,
+    "gpu": null,
+    "gpu_vram_bytes": 0
+  },
+  "source_sha256": "7926381899096388cf3f17b4cfbb3298a08bd1369441e7ef580a1af23c634882",
+  "normalization_policy": "fixed training-only statistics; not re-estimated while fine-tuning",
+  "selection": "validation macro MSE; epoch 0 eligible; development only",
+  "encoder_policy": "frozen modules eval; selected top layers train; no SpecAugment/LayerDrop"
+}

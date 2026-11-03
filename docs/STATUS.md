@@ -1,11 +1,18 @@
 # 현재 상태
 
-2026-11-02 · **Phase 3 진행 중, 사용자 요청으로 일시 중단**
+2026-11-03 · **Phase 3 로컬 CPU 구현·검증 완료, GPU 전체 실험 준비**
 
-WavLM 상위 2층 fine-tuning 구현과 실제 WAV 20개 CPU 1 epoch/Jupyter 실행까지 완료했다.
-체크포인트·그래프·실행 출력은 로컬에 저장했다. 새 커널 복원, 재개 검증, 전체 회귀 테스트,
-최종 실행 안내와 GPU 준비 문서는 남아 있으며 GPU 학습은 실행하지 않았다.
-정확한 결과·보존 경로·재개 순서는 [Phase 3 재개 기록](PHASE3_RESUME.md)을 따른다.
+- WavLM 상위 0/1/2층 모드, 원음의 동적 padding/마스크, 기존 head warm-start와 신규 초기화, 별도 LR·accumulation·clipping·checkpoint 구현.
+- 실제 pretrained WavLM/원음으로 상위 층 gradient 및 가중치 변경, frozen 가중치 불변, 단일/배치 입력 수치 일치를 확인했다.
+- 실제 WAV 20개 CPU 학습, Jupyter 실행, 새 kernel 예측 bitwise 복원 완료. 1+1 epoch 재개와 연속 2 epoch의 모델·optimizer·난수·예측 모두 정확히 일치했다.
+- 기존+신규 테스트 103개 통과. 기존 파일 6,781개 보존 감사 결과와 상세 집계는 아래 실험 기록에 있다.
+- 작은 Validation MSE는 .414404 → .443111 → .468089로 증가했다. best는 epoch 0이며 성능 개선을 주장하지 않는다.
+- 초기 1 epoch 68.36초/peak RSS 1.105 GiB, 재개 30.77초/1.475 GiB. 유료 지출 $0. GPU 실측·전체 2,000/500 학습·다중 seed 비교는 미실행이다.
+
+시작: `start-phase3.cmd` → [실행·복원·GPU 안내](PHASE3_GUIDE.md).
+근거: [집계 결과·그래프·검증](../experiments/phase3/README.md), [통제 실험 계획](../experiments/phase3/protocol.json).
+다음 단계는 승인된 CUDA 환경의 작은 pilot과 비용 실측이다. 유료 자원 사용은 사전 승인받는다.
+[이전 중단 기록](PHASE3_RESUME.md)은 보존하며, 현재 완료 상태는 이 문서를 우선한다.
 아래 Phase 2 내용은 이전 완료 이력이다.
 
 ---

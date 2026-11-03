@@ -1,0 +1,22 @@
+{
+  "experiment": "WavLM Base+ partial fine-tuning",
+  "encoder_revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+  "targets": ["accuracy", "fluency", "prosody", "total"],
+  "selection_metric": "validation macro MSE on original 0-10 scale; epoch 0 eligible",
+  "train_utterances": 2000,
+  "validation_utterances": 500,
+  "train_speakers": 100,
+  "validation_speakers": 25,
+  "test_allowed": false,
+  "smoke_scope": "16 train / 4 validation; correctness only",
+  "primary": {"top_layers": 2, "hidden": 128, "dropout": 0.5, "head_lr": 0.0001, "encoder_lr": 0.00001, "batch_size": 2, "accumulation": 2, "max_epochs": 10, "patience": 3, "seed": 7},
+  "initialization": "warm-start from existing Phase 2 seed 7 dropout 0.5 epoch 8 head; training-only statistics fixed",
+  "controls_planned": ["top_layers=0 with identical warm-start and seed", "top_layers=1 only after primary/control analysis"],
+  "replication_seeds_planned": [7, 19, 42],
+  "comparison": "Same ordered validation IDs, targets, utterance units; compare single runs to single runs, ensembles separately; speaker bootstrap paired differences",
+  "normalization": "No raw waveform normalization per official processor; frozen training-only mean/std of pooled features",
+  "regularization": "Head dropout .5; selected encoder layers train, frozen modules eval; no LayerDrop or SpecAugment",
+  "future_scope": ["temporal pooling/sequence representation ablation", "reference text conditioning with alignment"],
+  "bias": "Repeated use of development validation creates selection bias; not an independent generalization estimate",
+  "gpu_status": "not executed; measured pilot and explicit paid-compute approval required"
+}

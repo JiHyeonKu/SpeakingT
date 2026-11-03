@@ -1,0 +1,12 @@
+{
+  "wall_seconds": 63.4876203,
+  "process_cpu_seconds": 218.40625,
+  "mean_cpu_cores_used": 3.4401391793858114,
+  "observed_peak_rss_bytes": 1138454528,
+  "rss_at_start_bytes": 288088064,
+  "cuda_peak_allocated_bytes": 0,
+  "cuda_peak_reserved_bytes": 0,
+  "rss_sampling_interval_seconds": 0.05,
+  "billing_measured": false,
+  "paid_gpu_compute_usd": 0
+}
